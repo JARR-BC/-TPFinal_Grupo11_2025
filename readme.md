@@ -19,8 +19,7 @@ qkjuani29@gmail.com
 
 3. Docentes y materia
 
-Pedro Iriso
-Matias Gagliardo
+Pedro Iriso, Matias Gagliardo
 
 Laboratorio de computacion 1  
 
