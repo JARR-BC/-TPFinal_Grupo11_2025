@@ -36,7 +36,25 @@ La alarma sonora se activara una vez que el semaforo a cruzar esté en rojo y la
 
 5. //-------------------------------------------------------------------------------------------------//
 
-6. 
+
+6. 3 Led's RGB
+   1 Boton
+   1 Buzzer
+
+7. ![Diagrama eléctrico](doc/semaforoesquemav1.1.pdf)
+
+
+8.  //-------------------------------------------------------------------------------------------------//
+
+
+9. El semaforo estará en continuo funcionamiento, debe accionar el boton para iniciar la peticion del cruce peatonal durante 5 segundos.
+
+
+10. //-------------------------------------------------------------------------------------------------//
+
+
+11. //-------------------------------------------------------------------------------------------------//
+   
 
 
 
