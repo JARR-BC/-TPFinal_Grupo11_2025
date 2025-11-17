@@ -120,18 +120,23 @@ Transición (PEATON → NORMAL)
 10. ## Video de funcionamiento
 
   [Mirá el video de demostración del proyecto](https://youtube.com/shorts/sHnKPJpQ0Dg?feature=share)
+  
+ 
 
+## 11. Licencia y Créditos
 
+Lucas Viña, Julian Rivadeo, Maximiliano Candia, Juan Ignacio Cucarella. 
 
+**Licencia**
+Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
 
-12. El semaforo estará en continuo funcionamiento, debe accionar el boton para iniciar la peticion del cruce peatonal durante 5 segundos.
+**Créditos y Tecnologías**
+Este proyecto fue desarrollado utilizando las siguientes plataformas y herramientas:
 
-
-13. //-------------------------------------------------------------------------------------------------//
-
-
-14. //-------------------------------------------------------------------------------------------------//
-   
+*IDE Arduino:* Para la programación (C++) y la lógica del sistema.
+*Tinkercad de Autodesk:* Para el diseño, simulación y testeo del circuito.
+*YouTube:* Para el alojamiento del video de demostración.
+*GitHub:* Para el control de versiones y la documentación del proyecto.
 
 
 
