@@ -58,22 +58,79 @@ Los botones de cada cruce colocarán el semaforo a rojo durante determinado tiem
 
 7. ## Diagrama de conexiones
    
-  
+![Diagrama de conexiones del sistema de semáforos](doc/diagramav1.4.pdf)
    
+8. ## Explicacion maquina de estados.
 
-9. 
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](doc/maquinadestados.png)
+  
+Estado MODO_NORMAL (buzzerActivo == false)
+
+    Accion de Estado: ejecutarOndaVerde() mientras forzado de actualizarSemaforo sea false.
 
 
-10.  //-------------------------------------------------------------------------------------------------//
+Transición (NORMAL a PEATON)
+
+    Cuando se pulsa el boton presionado && !buzzerActivo 
+
+    Acciones: Cuando esto ocurre, el programa ejecuta varias acciones a la vez para pasar al otro estado:
+
+        buzzerActivo = true
+
+        buzzerInicio = ahora
+
+        rojoForzadoX = true
+
+        tone(BUZZER_LED, 500)
+
+Estado MODO_PEATON (buzzerActivo == true)
+
+    Acción de Estado: forzarRojo() mientras forzado de actualizarSemaforo sea true.
+
+    El programa fuerza el rojo correspondiente.
+
+Transición (PEATON → NORMAL)
+
+    Cuando buzzerActivo && (ahora - buzzerInicio >= 3000) comprueba si realizar la onda verde a cada semaforo.
+
+    Acciones: Cuando el tiempo se cumple, el programa ejecuta estas acciones para volver al inicio:
+
+        buzzerActivo = false
+
+        rojoForzado1/2/3 = false
+
+        noTone(BUZZER_LED)
+
+9.  ## Instrucciones de uso y ejecucion.
+
+  1-  Ubique el botón al lado del poste del semáforo, encontrará un pulsador para peatones.
+
+  2-  Solicite el cruce pulsando el boton.
+
+  3-  Espere la señal auditiva Inmediatamente después de presionar el botón, el sistema activará una alarma sonora (un pitido constante).
+
+  4-  Cruce con precaución.
+
+   IMPORTANTE: 
+    El inicio del sonido es su señal para comenzar a cruzar. En este momento, el semáforo para los vehículos de ese cruce se ha puesto en rojo.
+    El sonido durará 3 segundos. Este es el tiempo total del que dispone para cruzar la calle.
+    Cuando el sonido se detenga, el tiempo de cruce ha finalizado y el semáforo volverá a su ciclo normal. No intente cruzar si el sonido ya se detuvo.
 
 
-11. El semaforo estará en continuo funcionamiento, debe accionar el boton para iniciar la peticion del cruce peatonal durante 5 segundos.
+10. ## Video de funcionamiento
+
+  [Mirá el video de demostración del proyecto](https://youtube.com/shorts/sHnKPJpQ0Dg?feature=share)
 
 
-12. //-------------------------------------------------------------------------------------------------//
+
+
+12. El semaforo estará en continuo funcionamiento, debe accionar el boton para iniciar la peticion del cruce peatonal durante 5 segundos.
 
 
 13. //-------------------------------------------------------------------------------------------------//
+
+
+14. //-------------------------------------------------------------------------------------------------//
    
 
 
