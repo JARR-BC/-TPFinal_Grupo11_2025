@@ -48,12 +48,20 @@ Los botones de cada cruce colocarán el semaforo a rojo durante determinado tiem
 
 
 6. ## Componentes utilizados
-   3 Led's RGB
-   3 Pulsadores
-   1 Buzzer
-   22 Resistencias 
+   1 Arduino UNO,
+   1 Protoboard,
+   3 Led's RGB,
+   3 Pulsadores,
+   1 Buzzer,
+   13 Resistencias,
+   22 Cables macho-macho.
 
-9. ![Diagrama eléctrico](doc/semaforoesquemav1.1.pdf)
+7. ## Diagrama de conexiones
+   
+  
+   
+
+9. 
 
 
 10.  //-------------------------------------------------------------------------------------------------//
